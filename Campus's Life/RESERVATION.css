@@ -1,0 +1,87 @@
+/* Pour le header*/
+ul.nav{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    }
+nav.li {
+    float:left; /*pour IE*/
+    border-left:1px solid black;
+}
+ul.nav li a {
+    display:block;
+    float:left;   
+    width:33.33%;
+    line-height:75px; /*hauteur de l'image de fond*/
+    background:#7fa9d3;
+    color:#DCDCDC;
+    text-decoration:none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:large;
+}
+ul.nav li a:hover {
+    background-color:#adc2d8;
+    color: #6e90b3;
+    font-size: x-large;
+}  
+
+/* jusqu'ici */
+
+#img{
+    width:300px;
+    padding:auto;
+}
+
+/* fond d'image */
+body{
+    background-image:url(ciel2.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin:auto;
+    padding:auto;   
+}
+ul{
+    list-style-type: none;
+}
+
+.promo {
+    display: inline-block;
+    box-sizing:border-box;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    padding-top:20px;
+} 
+/*Bien ordonnée les box*/
+
+.a , .c , .b , .f{
+    padding-top:auto;
+    margin:13px 13px 13px 13px;
+    float:left;
+    overflow: hidden; 
+    vertical-align: middle;
+}/*Horizontalement les boites */
+.a:hover, .b:hover{
+    background-color:rgb(221, 221, 221);
+}
+.c:hover, .f:hover{
+    background-color: rgb(184, 182, 189);
+}
+p{
+    text-align:center;    
+    color:rgb(22, 37, 88);
+}
+span.lieu{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+.bloc-prix{
+    font-size:20px;
+}
+
+hr{
+    display:none;
+}
