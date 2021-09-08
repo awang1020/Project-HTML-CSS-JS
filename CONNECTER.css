@@ -1,0 +1,188 @@
+ul.nav{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    }
+nav.li {
+    float:left; /*pour IE*/
+    border-left:1px solid black;
+}
+ul.nav li a {
+    display:block;
+    float:left;   
+    width:33.33%;
+    line-height:75px; /*hauteur de l'image de fond*/
+    background:#7fa9d3;
+    color:#DCDCDC;
+    text-decoration:none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:large;
+    }
+ul.nav li a:hover {
+    background-color:#adc2d8;
+    color: #6e90b3;
+    font-size: x-large;
+    }  
+
+/* jusqu'ici */
+
+#img{
+    width:300px;
+}
+
+/* fond d'image */
+body{
+    background-image:url(ciel2.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.se-connecter{
+    margin:auto;
+    width:100%;
+    max-width:525px;
+    min-height:670px;
+    position:relative;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    margin-top:100px;
+}
+.a{
+width:100%;
+height:100%;
+position:absolute;
+padding:90px 70px 50px 70px;
+background-image:url(ciel1.jpg);
+}
+.a .d-fenetre,
+.a .f-fenetre{
+top:0;
+left:0;
+right:0;
+bottom:0;
+position:absolute;
+transform:rotateY(180deg);
+backface-visibility:hidden;
+transition:all .4s linear;
+}
+.a .d,
+.a .f,
+.Connexion .groupe .check{
+display:none;
+}
+.a .tab,
+.Connexion .groupe .label,
+.Connexion .groupe .button{
+text-transform:uppercase;
+}
+.a .tab{
+font-size:22px;
+margin-right:15px;
+padding-bottom:5px;
+margin:0 15px 10px 0;
+display:inline-block;
+border-bottom:2px solid transparent;
+}
+.a .d:checked + .tab,
+.a .f:checked + .tab{
+color:#fff;
+border-color:#1161ee;
+}
+.Connexion{
+min-height:345px;
+position:relative;
+perspective:1000px;
+transform-style:preserve-3d;
+}
+.Connexion .groupe{
+margin-bottom:15px;
+}
+.Connexion .groupe .label,
+.Connexion .groupe .input,
+.Connexion .groupe .button{
+width:100%;
+color:#fff;
+display:block;
+}
+.Connexion .groupe .input,
+.Connexion .groupe .button{
+border:none;
+padding:15px 20px;
+border-radius:25px;
+background:rgba(255,255,255,.1);
+}
+.Connexion .groupe input[data-type="password"]{
+text-rendering:circle;
+-webkit-text-security:circle;
+}
+.Connexion .groupe .label{
+color:#aaa;
+font-size:12px;
+}
+.Connexion .groupe .button{
+background:#1161ee;
+}
+.Connexion .groupe label .icon{
+width:15px;
+height:15px;
+border-radius:2px;
+position:relative;
+display:inline-block;
+background:rgba(255,255,255,.1);
+}
+.Connexion .groupe label .icon:before,
+.Connexion .groupe label .icon:after{
+content:'';
+width:10px;
+height:2px;
+background:#fff;
+position:absolute;
+transition:all .2s ease-in-out 0s;
+}
+/*Fleche */
+.Connexion .groupe label .icon:before{
+left:3px;
+width:5px;
+bottom:6px;
+transform:scale(0) rotate(0);
+} /*en crochet*/
+.Connexion .groupe label .icon:after{
+top:6px;
+right:0;
+transform:scale(0) rotate(0);
+}
+.Connexion .groupe .check:checked + label{
+color:#fff;
+}
+.Connexion .groupe .check:checked + label .icon:before{
+transform:scale(1) rotate(45deg);
+}
+.Connexion .groupe .check:checked + label .icon:after{
+transform:scale(1) rotate(-45deg);
+} /*pour le faire disparaitre qd on clique*/
+.a .d:checked + .tab + .f + .tab + .Connexion .d-fenetre{
+transform:rotate(0);
+}
+.a .f:checked + .tab + .Connexion .f-fenetre{
+transform:rotate(0);
+}/*transition*/
+
+.m{
+height:2px;
+margin:60px 0 50px 0;
+background:rgba(255,255,255,.2);
+}
+.b{
+text-align:center;
+}
+
+span:hover{
+    text-decoration:underline;
+    font-size:110%;
+}

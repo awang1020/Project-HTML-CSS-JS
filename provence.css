@@ -1,0 +1,98 @@
+#img1{
+    width:500px;
+    padding:15px 0 15px 15px;
+}
+ul.nav{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    }
+nav.li {
+    float:left; /*pour IE*/
+    border-left:1px solid black;
+}
+ul.nav li a {
+    display:block;
+    float:left;   
+    width:33.33%;
+    line-height:75px; /*hauteur de l'image de fond*/
+    background:#7fa9d3;
+    color:#DCDCDC;
+    text-decoration:none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:large;
+    }
+ul.nav li a:hover {
+    background-color:#adc2d8;
+    color: #6e90b3;
+    font-size: x-large;
+}  
+/*fond*/
+body{
+    background-image:url(ciel1.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.footer{
+    padding:20px;
+    background:#ddd;
+}
+
+h1 {
+    border: 0;
+    font-size: xx-large;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+/*style de l'écriture*/
+.text h1,.text h2,.text h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text p{
+    font-family:Arial, Helvetica, sans-serif;
+}   
+
+.button {
+    background-color: rgb(119, 156, 255); 
+    border: none;
+    color: white;
+    padding: 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+  
+.button1{
+    text-align: center;
+    margin: 100px 250px;
+    padding: auto;
+    float: right;
+}
+.imgbutton{
+    margin: auto;
+    padding: auto;
+}
+.commander2{
+    background-color: rgb(33, 86, 247); 
+    border: none;
+    color: white;
+    padding: 36px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+.commander1{
+    text-align: center;
+}

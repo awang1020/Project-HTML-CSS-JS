@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Emploi du Temps</title>
+	<link href="emploidutemps.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="emploidutemps.js"></script>
+</head>
+
+<body>
+    <div class="fermer">
+            <input type="button"class="fermer2" value="X" onClick="window.history.back()">
+    </div>
+    <div class="table-title">
+    <h1>Emploi du Temps</h1>
+    </div>
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th class="text"></th>
+                <th class="text">Lundi</th>
+                <th class="text">Mardi</th>
+                <th class="text">Mercredi</th>
+                <th class="text">Jeudi</th>
+                <th class="text">Vendredi</th>
+                <th class="text">Samedi</th>
+                <th class="text">Dimanche</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+            <tr>
+                <td class="text">8:00</td>
+                <td class="text" onclick="modifie(11)" id="11"></td>
+                <td class="text" onclick="modifie(12)" id="12"></td>
+                <td class="text" onclick="modifie(13)" id="13"></td>
+                <td class="text" onclick="modifie(14)" id="14"></td>
+                <td class="text" onclick="modifie(15)" id="15"></td>
+                <td class="text" onclick="modifie(16)" id="16"></td>
+                <td class="text" onclick="modifie(17)" id="17"></td>
+            </tr>
+            <tr>
+                <td class="text">9:00</td>
+                <td class="text" onclick="modifie(21)" id="21"></td>
+                <td class="text" onclick="modifie(22)" id="22"></td>
+                <td class="text" onclick="modifie(23)" id="23"></td>
+                <td class="text" onclick="modifie(24)" id="24"></td>
+                <td class="text" onclick="modifie(25)" id="25"></td>
+                <td class="text" onclick="modifie(26)" id="26"></td>
+                <td class="text" onclick="modifie(27)" id="27"></td>
+            </tr>
+            <tr>
+                <td class="text">10:00</td>
+                <td class="text" onclick="modifie(31)" id="31"></td>
+                <td class="text" onclick="modifie(32)" id="32"></td>
+                <td class="text" onclick="modifie(33)" id="33"></td>
+                <td class="text" onclick="modifie(34)" id="34"></td>
+                <td class="text" onclick="modifie(35)" id="35"></td>
+                <td class="text" onclick="modifie(36)" id="36"></td>
+                <td class="text" onclick="modifie(37)" id="37"></td>
+            </tr>
+            <tr>
+                <td class="text">11:00</td>
+                <td class="text" onclick="modifie(41)" id="41"></td>
+                <td class="text" onclick="modifie(42)" id="42"></td>
+                <td class="text" onclick="modifie(43)" id="43"></td>
+                <td class="text" onclick="modifie(44)" id="44"></td>
+                <td class="text" onclick="modifie(45)" id="45"></td>
+                <td class="text" onclick="modifie(46)" id="46"></td>
+                <td class="text" onclick="modifie(47)" id="47"></td>
+            </tr>
+            <tr>
+                <td class="text">12:00</td>
+                <td class="text" onclick="modifie(51)" id="51"></td>
+                <td class="text" onclick="modifie(52)" id="52"></td>
+                <td class="text" onclick="modifie(53)" id="53"></td>
+                <td class="text" onclick="modifie(54)" id="54"></td>
+                <td class="text" onclick="modifie(55)" id="55"></td>
+                <td class="text" onclick="modifie(56)" id="56"></td>
+                <td class="text" onclick="modifie(57)" id="57"></td>
+            </tr>
+            <tr>
+                <td class="text">13:00</td>
+                <td class="text" onclick="modifie(61)" id="61"></td>
+                <td class="text" onclick="modifie(62)" id="62"></td>
+                <td class="text" onclick="modifie(63)" id="63"></td>
+                <td class="text" onclick="modifie(64)" id="64"></td>
+                <td class="text" onclick="modifie(65)" id="65"></td>
+                <td class="text" onclick="modifie(66)" id="66"></td>
+                <td class="text" onclick="modifie(67)" id="67"></td>
+            </tr>
+            <tr>
+                <td class="text">14:00</td>
+                <td class="text" onclick="modifie(71)" id="71"></td>
+                <td class="text" onclick="modifie(72)" id="72"></td>
+                <td class="text" onclick="modifie(73)" id="73"></td>
+                <td class="text" onclick="modifie(74)" id="74"></td>
+                <td class="text" onclick="modifie(75)" id="75"></td>
+                <td class="text" onclick="modifie(76)" id="76"></td>
+                <td class="text" onclick="modifie(77)" id="77"></td>
+            </tr>
+            <tr>
+                <td class="text">15:00</td>
+                <td class="text" onclick="modifie(81)" id="81"></td>
+                <td class="text" onclick="modifie(82)" id="82"></td>
+                <td class="text" onclick="modifie(83)" id="83"></td>
+                <td class="text" onclick="modifie(84)" id="84"></td>
+                <td class="text" onclick="modifie(85)" id="85"></td>
+                <td class="text" onclick="modifie(86)" id="86"></td>
+                <td class="text" onclick="modifie(87)" id="87"></td>
+            </tr>
+            <tr>
+                <td class="text">16:00</td>
+                <td class="text" onclick="modifie(91)" id="91"></td>
+                <td class="text" onclick="modifie(92)" id="92"></td>
+                <td class="text" onclick="modifie(93)" id="93"></td>
+                <td class="text" onclick="modifie(94)" id="94"></td>
+                <td class="text" onclick="modifie(95)" id="95"></td>
+                <td class="text" onclick="modifie(96)" id="96"></td>
+                <td class="text" onclick="modifie(97)" id="97"></td>
+            </tr>
+        </tbody>
+</table>
+<div class="matiere">
+        <h2>Choisir votre matière</h2>
+    <button class="button"onclick="changer1()">Tennis</button>
+    <button class="button"onclick="changer2()">Basket</button>
+    <button class="button"onclick="changer3()">Danse</button>
+    <button class="button"onclick="changer4()">Volley Ball</button>
+</div>
+<div class="sauver1">
+        <button class="sauver2" onclick="sauvegarder()">Sauvegarder</button>
+</div>
+</body>
+</html>
